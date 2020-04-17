@@ -26,6 +26,8 @@ public class Solution {
 }
 
 /*
+https://www.hackerrank.com/challenges/java-loops-i/problem
+
 Objective
 In this challenge, we're going to use loops to help us do some simple math.
 
