@@ -10,7 +10,7 @@ public class Solution {
                 String s1=sc.next();
                 int x=sc.nextInt();
                 System.out.printf("%-15.10s", s1);
-                System.out.println();
+                System.out.printf("%03d%n", x);
             }
             System.out.println("================================");
 
