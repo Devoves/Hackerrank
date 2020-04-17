@@ -18,6 +18,8 @@ public class Solution {
 }
 
 /*
+https://www.hackerrank.com/challenges/java-output-formatting/problem
+
 Sample Input
 
 java 100
