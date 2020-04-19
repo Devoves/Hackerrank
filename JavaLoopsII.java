@@ -13,8 +13,7 @@ class Solution{
                 if (0 <= a && a <= 50 && 0 <= b && b <= 50 && 1 <= n && n <= 15) {
                     for (int j = 0, add = 0; j < n; j++) {
                         add = (int) (Math.pow(2, j) * b + add);
-                        int result = a + add;
-                        System.out.print(result + " ");
+                        System.out.print(a + add + " ");
                     }
                     System.out.println("");
                 }
