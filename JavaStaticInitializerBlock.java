@@ -1,12 +1,27 @@
-import java.io.*;
+mport java.io.*;
 import java.util.*;
 import java.text.*;
 import java.math.*;
 import java.util.regex.*;
 
-public class Solution {
+public class JavaStaticInitializerBlock {
 
-Write your code here
+static Scanner sc = new Scanner(System.in);
+static int B = sc.nextInt();
+static int H = sc.nextInt();
+static boolean flag;
+
+static{
+    try{
+        if (-100<=B && B<=100 && -100<=H && H<=100){
+            if (0<B && 0<H){
+            flag = true;
+            } else {
+            System.out.println("java.lang.Exception: Breadth and height must be positive");
+            }
+        } else {}
+    } catch (Exception e) {}
+}
 
 public static void main(String[] args){
 		if(flag){
@@ -17,7 +32,3 @@ public static void main(String[] args){
 	}//end of main
 
 }//end of class
-
-/*
-https://www.hackerrank.com/challenges/java-static-initializer-block/problem
-*/
