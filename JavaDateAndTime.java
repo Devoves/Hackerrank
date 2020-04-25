@@ -9,6 +9,7 @@ import java.util.regex.*;
 import java.util.stream.*;
 import static java.util.stream.Collectors.joining;
 import static java.util.stream.Collectors.toList;
+import java.time.LocalDate;
 
 class Result {
 
@@ -23,7 +24,8 @@ class Result {
      */
 
     public static String findDay(int month, int day, int year) {
-
+        LocalDate ld = LocalDate.of(year, month, day);
+        return ld.getDayOfWeek().name();
     }
 
 }
