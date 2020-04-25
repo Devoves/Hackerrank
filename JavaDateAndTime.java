@@ -12,7 +12,7 @@ import static java.util.stream.Collectors.toList;
 import java.time.LocalDate;
 
 class Result {
-
+ 
     /*
      * Complete the 'findDay' function below.
      *
