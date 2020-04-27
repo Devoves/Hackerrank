@@ -11,7 +11,7 @@ public class Solution {
         double payment = scanner.nextDouble();
         scanner.close();
 
-        Locale indiaLocale = new Locale("en", "IN");
+        Locale indiaLocale = new Locale("en", "IN"); // IANA Language Subtag Registry
         NumberFormat us = NumberFormat.getCurrencyInstance(Locale.US);
         NumberFormat india = NumberFormat.getCurrencyInstance(indiaLocale);
         NumberFormat china = NumberFormat.getCurrencyInstance(Locale.CHINA);
