@@ -9,6 +9,15 @@ public class JavaSubstringComparisons {
         // Complete the function
         // 'smallest' must be the lexicographically smallest substring of length 'k'
         // 'largest' must be the lexicographically largest substring of length 'k'
+                String min = null, max = null;
+        for(int i=0; i+k<=s.length(); i++){
+            String sub = s.substring(i,k+i);
+            System.out.println("iteration " + i + " the length is " + s.length());
+            System.out.println(sub);
+            if(min == null || min.compareTo(sub) > 0){
+                
+            }
+        }
         
         return smallest + "\n" + largest;
     }
