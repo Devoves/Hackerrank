@@ -3,21 +3,20 @@ import java.util.Scanner;
 public class JavaSubstringComparisons {
 
     public static String getSmallestAndLargest(String s, int k) {
-        String smallest = "";
-        String largest = "";
-        
-        // Complete the function
-        // 'smallest' must be the lexicographically smallest substring of length 'k'
-        // 'largest' must be the lexicographically largest substring of length 'k'
-                String min = null, max = null;
-        for(int i=0; i+k<=s.length(); i++){
-            String sub = s.substring(i,k+i);
-            System.out.println("iteration " + i + " the length is " + s.length());
-            System.out.println(sub);
-            if(min == null || min.compareTo(sub) > 0){
-                
-            }
-        }
+		String smallest = "";
+		String largest = "";
+
+		//s = s.toLowerCase();      in case you want it to be non-case sensitivity
+		
+		for (int i = 0; i + k <= s.length(); i++) {
+			String sub = s.substring(i, k + i);
+			if (smallest == "" || smallest.compareTo(sub) > 0) {
+				smallest = sub;
+			}
+			if (largest == "" || largest.compareTo(sub) < 0) {
+				largest = sub;
+			}
+		}
         
         return smallest + "\n" + largest;
     }
