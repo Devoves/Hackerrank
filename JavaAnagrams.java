@@ -3,8 +3,34 @@ import java.util.Scanner;
 public class JavaAnagrams {
 
     static boolean isAnagram(String a, String b) {
-        // Complete the function
-    }
+		String aLowerCase = a.toLowerCase();
+		String bLowerCase = b.toLowerCase();
+		if (aLowerCase.length() != bLowerCase.length()) {
+			return false;
+		}
+
+		int charRepeatsInFirstLine = 0;
+		int charRepeatsInSecondLine = 0;
+		for (int i = 0; i < a.length(); i++) {
+			char charInFirstWord = aLowerCase.charAt(i);
+			charRepeatsInFirstLine = countOccurrences(aLowerCase, charInFirstWord);
+			charRepeatsInSecondLine = countOccurrences(bLowerCase, charInFirstWord);
+			if (charRepeatsInFirstLine != charRepeatsInSecondLine) {
+				return false;
+			}
+		}
+		return true;
+	}
+
+	public static int countOccurrences(String stringToLook, char charToCheck) {
+		int count = 0;
+		for (int i = 0; i < stringToLook.length(); i++) {
+			if (stringToLook.charAt(i) == charToCheck) {
+				count++;
+			}
+		}
+		return count;
+	}
 
   public static void main(String[] args) {
     
@@ -19,4 +45,6 @@ public class JavaAnagrams {
 
 /*
 https://www.hackerrank.com/challenges/java-anagrams/problem
+Complete the function in the editor.
+If  and  are case-insensitive anagrams, print "Anagrams"; otherwise, print "Not Anagrams" instead.
 */
