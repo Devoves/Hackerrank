@@ -14,9 +14,16 @@ class JavaRegex{
     }
 }
 
-class MyRegex{
-    String pattern = "([0-9]|[0-9][0-9]|[01][0-9][0-9]|2[0-4][0-9]|25[0-5])\\.([0-9]|[0-9][0-9]|[01][0-9][0-9]|2[0-4][0-9]|25[0-5])\\.([0-9]|[0-9][0-9]|[01][0-9][0-9]|2[0-4][0-9]|25[0-5])\\.([0-9]|[0-9][0-9]|[01][0-9][0-9]|2[0-4][0-9]|25[0-5])";
+class MyRegex {
+	
+	/*
+	 * Checks whether a number is in range 0-255, 00-255 OR 000-255
+	 */
+	String partOfIP = "([0-9]|[0-9][0-9]|[01][0-9][0-9]|2[0-4][0-9]|25[0-5])";
+	String dotInIP = "\\.";
+	String pattern = partOfIP + dotInIP + partOfIP + dotInIP + partOfIP + dotInIP + partOfIP;
 }
+
 
 /*
 https://www.hackerrank.com/challenges/java-regex/problem
