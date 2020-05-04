@@ -7,7 +7,13 @@ public class PatternSyntaxChecker{
 		int testCases = Integer.parseInt(in.nextLine());
 		while(testCases>0){
 			String pattern = in.nextLine();
-          	//Write your code
+		    try{
+				Pattern compiledPattern = Pattern.compile(pattern);
+				System.out.println("Valid");
+		    } catch (Exception e){
+				System.out.println("Invalid");
+		    }
+		    testCases--;
 		}
 	}
 }
