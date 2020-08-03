@@ -46,5 +46,5 @@ public class JavaAnagrams {
 /*
 https://www.hackerrank.com/challenges/java-anagrams/problem
 Complete the function in the editor.
-If  and  are case-insensitive anagrams, print "Anagrams"; otherwise, print "Not Anagrams" instead.
+If "a" and "b" are case-insensitive anagrams, print "Anagrams"; otherwise, print "Not Anagrams" instead.
 */
